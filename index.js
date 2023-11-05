@@ -2,9 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
-const { Pool } = require('pg'); // Используйте { Pool } из 'pg'
+const { Pool } = require('pg');
 
-// Укажите подключение к вашей удаленной базе данных
 const pool = new Pool({
   connectionString: 'postgres://txhhqhrc:dRaMlNDvxFlAKQlL_AOfqgHScWzQN6Lm@rain.db.elephantsql.com/txhhqhrc',
 });
